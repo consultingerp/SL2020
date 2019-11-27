@@ -25,7 +25,10 @@ odoo.define('pos_stock.BaseWidget',function(require) {
         get_information: function(wk_product_id) {
             self = this;
             if (self.pos.get('wk_product_qtys'))
-                return self.pos.get('wk_product_qtys')[wk_product_id];
+                if (self.pos.get('wk_product_qtys')[wk_product_id] >=0)
+                    return self.pos.get('wk_product_qtys')[wk_product_id];
+                else
+                    return '0'
         },
         wk_change_qty_css: function() {
             self = this;
