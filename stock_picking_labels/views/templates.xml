@@ -24,10 +24,9 @@
         <template id="stock_picking_labels.picking_labels">
             <t t-call="web.basic_layout">
                 <t t-foreach="docs" t-as="doc">
-                <t t-foreach="doc.move_ids_without_package" t-as="lins">
-                    <t t-foreach="lins.move_line_ids" t-as="move">
-
-<!--                     <t t-foreach="doc.move_ids_without_package" t-as="move"> -->
+                <t t-set="has_barcode" t-value="any([move_ids_without_package.product_id and move_ids_without_package.product_id.sudo().barcode or move_ids_without_package.package_id for move_ids_without_package in doc.move_line_ids])"/>
+                    <t t-if="has_barcode">
+                    <t t-foreach="doc.move_ids_without_package" t-as="move">
                         <t t-foreach="range(int(move.product_uom_qty))" t-as="qty">
                             <div class="page">
                                 
