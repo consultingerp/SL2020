@@ -24,7 +24,8 @@
         <template id="stock_picking_labels.picking_labels">
             <t t-call="web.basic_layout">
                 <t t-foreach="docs" t-as="doc">
-                    <t t-foreach="doc.move_ids_without_package.sorted(key=lambda m: m.product_id.id)" t-as="move">
+            <t t-foreach="o.move_ids_without_package.sorted(key=lambda m: m.product_id.id)" t-as="">
+                <t t-foreach="ml.move_line_ids.sorted(key=lambda move: move.location_id.id)" t-as="move">
 <!--                     <t t-foreach="doc.move_ids_without_package" t-as="move"> -->
                         <t t-foreach="range(int(move.product_uom_qty))" t-as="qty">
                             <div class="page">
@@ -93,6 +94,7 @@
                                 
                                 
                             </div>
+                        </t>
                         </t>
                     </t>
                 </t>
