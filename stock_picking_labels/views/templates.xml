@@ -62,7 +62,7 @@
                                 <!--</table>-->
                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
-                                        <th style="text-align: left;">
+                                        <th style="text-align: center;">
                                             <strong t-field="move.product_id.display_name"/>
 
                                         </th>
