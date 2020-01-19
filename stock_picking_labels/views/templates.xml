@@ -61,9 +61,9 @@
                                 <!--</table>-->
                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
-                                        <th style="text-align: left;">
+                                        <td style="text-align: center;">
                                             <strong t-field="move.product_id.display_name"/>
-                                        </th>
+                                        </td>
                                     </tr>
                                       <t t-if="move.product_id.barcode">
                                         <tr>
@@ -98,7 +98,7 @@
                             <div class="page">
                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
-                                        <th style="text-align: left;">
+                                        <th style="text-align: center;">
                                             <strong t-field="doc.display_name"/>
                                         </th>
                                     </tr>
@@ -126,7 +126,7 @@
                             <div class="page">
                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
-                                        <th style="text-align: left;">
+                                        <th style="text-align: center;">
                                             <strong t-field="doc.display_name"/>
                                         </th>
                                     </tr>
