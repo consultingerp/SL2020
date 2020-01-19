@@ -6,7 +6,7 @@
                 model="stock.picking"
                 report_type="qweb-pdf"
                 file="stock_picking_labels.templates"
-                name="stock_picking_labels.picking_labels"
+                name="stock_picking_labels.product_picking_labels"
                 attachment_use="False"
         />
   </data>
