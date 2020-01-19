@@ -17,21 +17,16 @@
             <field name="dpi">90</field>
         </record>
 
-        <record id="action_picking_labels" model="ir.actions.report">
-            <field name="paperformat_id" ref="paperformat_picking_product_label"/>
+        <record id="stock_picking_labels.action_picking_labels" model="ir.actions.report">
+            <field name="paperformat_id" ref="stock_picking_labels.paperformat_picking_product_label"/>
         </record>
 
-        <template id="product_picking_labels">
-
-            
-            
-            
+        <template id="stock_picking_labels.product_picking_labels">
             <t t-call="web.basic_layout">
                 <t t-foreach="docs" t-as="doc">
-                 <t t-foreach="doc.move_ids_without_package" t-as="move">
+                    <t t-foreach="doc.move_ids_without_package" t-as="move">
                         <t t-foreach="range(int(move.product_uom_qty))" t-as="qty">
                             <div class="page">
-                                
                                 <!--<table style="border-spacing:0;margin-bottom:0px;width:100%;" class="table table-sultan" >-->
                                     <!--<tr>-->
                                         <!--<td colspan="3" style="text-align: center;border: 2px solid black;">-->
@@ -58,12 +53,6 @@
                                         <!--</td>-->
                                     <!--</tr>-->
                                 <!--</table>-->
-                                
-                                
-                                
-                                
-                                
-                                
                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
                                         <th style="text-align: left;">
@@ -87,19 +76,11 @@
                                     </tr>
                                   </t>
                                 </table>
-
-                                
-                                
-                                
-                                
-                                
-                                
                             </div>
                         </t>
                     </t>
                 </t>
             </t>
-        
         </template>
     </data>
 </odoo>
