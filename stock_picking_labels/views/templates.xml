@@ -17,11 +17,11 @@
             <field name="dpi">90</field>
         </record>
 
-        <record id="stock_picking_labels.action_picking_labels" model="ir.actions.report">
-            <field name="paperformat_id" ref="stock_picking_labels.paperformat_picking_product_label"/>
+        <record id="action_picking_labels" model="ir.actions.report">
+            <field name="paperformat_id" ref="paperformat_picking_product_label"/>
         </record>
 
-        <template id="stock_picking_labels.picking_labels">
+        <template id="picking_labels">
 
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
