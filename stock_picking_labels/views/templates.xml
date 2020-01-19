@@ -67,13 +67,6 @@
 
                                         </th>
                                     </tr>
-                                    <tr>
-                                        <td>
-
-<!--                                             <strong>Price:</strong>
-                                            <strong t-field="move.product_id.list_price" t-options="{'widget': 'monetary', 'display_currency': move.product_id.company_id.currency_id}"/> -->
-                                        </td>
-                                    </tr>
                                       <t t-if="move.product_id.barcode">
                                         <tr>
                                         <td style="text-align: center; vertical-align: middle;" class="col-5">
@@ -84,6 +77,14 @@
                                         </td>
                                     </tr>
                                   </t>
+                                    <tr>
+                                        <td>
+
+<!--                                             <strong>Price:</strong>
+                                            <strong t-field="move.product_id.list_price" t-options="{'widget': 'monetary', 'display_currency': move.product_id.company_id.currency_id}"/> -->
+                                        </td>
+                                    </tr>
+
                                 </table>                                        
                             </div>
                         </t>
