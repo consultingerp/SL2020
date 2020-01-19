@@ -53,7 +53,13 @@
                                         <!--</td>-->
                                     <!--</tr>-->
                                 <!--</table>-->
-                                <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
+                                
+                                
+                                
+                                
+                                
+                                
+<!--                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
                                         <th style="text-align: left;">
                                             <strong t-field="move.product_id.display_name"/>
@@ -76,6 +82,15 @@
                                     </tr>
                                   </t>
                                 </table>
+                                
+                                 -->
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                             </div>
                         </t>
                     </t>
