@@ -122,6 +122,14 @@
                                         </td>
                                     </tr>
                                   </t>
+                                    <tr>
+                                        <td>
+
+<!--                                             <strong>Price:</strong>
+                                            <strong t-field="move.product_id.list_price" t-options="{'widget': 'monetary', 'display_currency': move.product_id.company_id.currency_id}"/> -->
+                                        </td>
+                                    </tr>
+
                                 </table>
                             </div>
                 </t>
@@ -150,6 +158,14 @@
                                         </td>
                                     </tr>
                                   </t>
+                                    <tr>
+                                        <td>
+
+<!--                                             <strong>Price:</strong>
+                                            <strong t-field="move.product_id.list_price" t-options="{'widget': 'monetary', 'display_currency': move.product_id.company_id.currency_id}"/> -->
+                                        </td>
+                                    </tr>
+
                                 </table>
                             </div>
                 </t>
