@@ -1,8 +1,8 @@
 <odoo>
   <data>
     <!-- Picking Labels -->
-        <report id="action_picking_labels"
-                string="Product Labels"
+        <report id="action_picking_labels_new"
+                string="Products Labels"
                 model="stock.picking"
                 report_type="qweb-pdf"
                 file="stock_picking_labels.templates"
