@@ -62,14 +62,15 @@
                                 <!--</table>-->
                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
-                                        <th style="text-align: left;">
-                                            <strong t-field="move.product_id.display_name"/>
+                                        <th >
                                         </th>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <strong>Price:</strong>
-                                            <strong t-field="move.product_id.list_price" t-options="{'widget': 'monetary', 'display_currency': move.product_id.company_id.currency_id}"/>
+                                        <td style="text-align: left;">
+                                            <strong t-field="move.product_id.display_name"/>
+
+<!--                                             <strong>Price:</strong>
+                                            <strong t-field="move.product_id.list_price" t-options="{'widget': 'monetary', 'display_currency': move.product_id.company_id.currency_id}"/> -->
                                         </td>
                                     </tr>
                                       <t t-if="move.product_id.barcode">
