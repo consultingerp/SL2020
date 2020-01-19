@@ -24,9 +24,12 @@
         <template id="stock_picking_labels.picking_labels">
             <t t-call="web.basic_layout">
                 <t t-foreach="docs" t-as="doc">
-                    <t t-foreach="doc.move_ids_without_package" t-as="move">
+                    <t t-foreach="doc.move_ids_without_package.sorted(key=lambda m: m.product_id.id)" t-as="move">
+<!--                     <t t-foreach="doc.move_ids_without_package" t-as="move"> -->
                         <t t-foreach="range(int(move.product_uom_qty))" t-as="qty">
                             <div class="page">
+                                
+                                
                                 <!--<table style="border-spacing:0;margin-bottom:0px;width:100%;" class="table table-sultan" >-->
                                     <!--<tr>-->
                                         <!--<td colspan="3" style="text-align: center;border: 2px solid black;">-->
@@ -59,7 +62,7 @@
                                 
                                 
                                 
-<!--                                 <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
+                                <table class="table table-condensed" style="border-bottom: 0px solid white !important;width: 3in;">
                                     <tr>
                                         <th style="text-align: left;">
                                             <strong t-field="move.product_id.display_name"/>
@@ -82,9 +85,7 @@
                                     </tr>
                                   </t>
                                 </table>
-                                
-                                 -->
-                                
+
                                 
                                 
                                 
