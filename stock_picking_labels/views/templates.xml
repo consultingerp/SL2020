@@ -27,7 +27,7 @@
             
             
             <t t-call="web.basic_layout">
-                <t t-foreach="docs" t-as="o">
+                <t t-foreach="docs" t-as="doc">
                  <t t-foreach="doc.move_ids_without_package" t-as="move">
                         <t t-foreach="range(int(move.product_uom_qty))" t-as="qty">
                             <div class="page">
