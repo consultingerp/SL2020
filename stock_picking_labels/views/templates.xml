@@ -17,7 +17,7 @@
             <field name="dpi">90</field>
         </record>
 
-        <record id="stock_picking_labels.action_picking_labels" model="ir.actions.report">
+        <record id="stock_picking_labels.action_picking_labels_new" model="ir.actions.report">
             <field name="paperformat_id" ref="stock_picking_labels.paperformat_picking_product_label"/>
         </record>
 
