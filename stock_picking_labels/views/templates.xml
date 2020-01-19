@@ -92,7 +92,7 @@
         
         
         
-        <template id="stock_picking_labels.action_picking_labels_product">
+        <template id="stock_picking_labels.product_template_picking_labels">
             <t t-call="web.basic_layout">
                 <t t-foreach="docs" t-as="doc">
                             <div class="page">
@@ -120,7 +120,7 @@
         
         
         
-        <template id="stock_picking_labels.action_picking_labels_product_product">
+        <template id="stock_picking_labels.product_product_picking_labels">
             <t t-call="web.basic_layout">
                 <t t-foreach="docs" t-as="doc">
                             <div class="page">
