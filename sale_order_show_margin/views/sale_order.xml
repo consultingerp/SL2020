@@ -10,18 +10,8 @@
                 <xpath expr="//field[@name='partner_id']" position="after">
                     <field name="is_cost_show"/>
                 </xpath>
-
-            </field>
-        </record>
-
-
-        <record id="view_line_sale_order_price_updated_line" model="ir.ui.view">
-            <field name="name">view.line.sale.order.price.updated.line</field>
-            <field name="model">sale.order</field>
-            <field name="inherit_id" ref="	sale.sale_order_line_view_form_readonly"/>
-            <field name="arch" type="xml">
-
-                 <xpath expr="//field[@name='margin']" position="replace">
+                
+                <xpath expr="//field[@name='margin']" position="replace">
                     <field name="margin" attrs="{'invisible':[('is_cost_show','=',False)]}"/>
                 </xpath>
 
