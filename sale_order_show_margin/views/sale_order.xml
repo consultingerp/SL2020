@@ -15,7 +15,7 @@
                 </xpath>
 
                  <xpath expr="//field[@name='margin']" position="replace">
-                    <field name="margin" attrs="{'invisible':[('show_fields','=',False)]}"/>
+                    <field name="margin" attrs="{'invisible':[('is_cost_show','=',False)]}"/>
                 </xpath>
 
             </field>
